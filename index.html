@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text Encryptor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="header">
+                <img class="logo" src="/images/alura_logo.png" alt="Alura Logo">           
+            </div>  
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left-panel" id="left-panel">
+                <textarea class="input-text" id="input-text" placeholder="Enter text here" autofocus maxlength="500"></textarea>
+                <div class="button-content">
+                    <span class="info">
+                        <img src="/images/exclamation_mark.png" alt="exclamation mark" />
+                        Only lowercase letters and no accents
+                    </span>
+                    <div class="button-group">
+                        <button class="btn-encrypt" onclick="encryptButton()">Encrypt</button>
+                        <button class="btn-decrypt" onclick="decryptButton()">Decrypt</button>
+                     
+                    </div>
+                </div>
+            </section>
+            <section class="right-panel" id="right-panel">
+                <img id="image-placeholder" class="image-placeholder" src="/images/right_panel.png" alt="No message found. Enter the text you want to encrypt or decrypt.">
+                <textarea id="output-text" class="output-text" placeholder="No message found" readonly></textarea>
+                <p id="info-text" class="info">Enter the text you want to encrypt or decrypt.</p>
+                <button id="btn-copy" class="btn-copy" onclick="copyButton()">Copy</button>
+            </section>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
