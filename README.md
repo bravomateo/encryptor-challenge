@@ -15,4 +15,4 @@ To get a local copy up and running, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/bravomateo/encryptor-challenge/tree/master
+   git clone https://github.com/bravomateo/encryptor-challenge.git
